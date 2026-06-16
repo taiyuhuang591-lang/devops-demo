@@ -38,8 +38,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/taiyuhuang591-lang/ArgoCD:${{ github.sha }}
-            ghcr.io/taiyuhuang591-lang/ArgoCD:latest
+            ghcr.io/taiyuhuang591-lang/devops-demo:${{ github.sha }}
+            ghcr.io/taiyuhuang591-lang/devops-demo:latest
 
       - name: Update Config Repo
         env:
