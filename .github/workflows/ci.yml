@@ -50,8 +50,8 @@ jobs:
             exit 0
           fi
           git clone https://x-access-token:${CONFIG_REPO_TOKEN}@github.com/taiyuhuang591-lang/devops-config.git
-          cd devops-config/argocd
-          sed -i "s|image: ghcr.io/.*/devops-demo:.*|image: ghcr.io/taiyuhuang591-lang/devops-demo:${{ github.sha }}|" k8s/deployment.yaml
+          cd devops-config
+          sed -i "s|image: ghcr.io/.*/devops-demo:.*|image: ghcr.io/taiyuhuang591-lang/devops-demo:${{ github.sha }}|" argocd/k8s/deployment.yaml
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add argocd/k8s/deployment.yaml
