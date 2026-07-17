@@ -38,8 +38,13 @@ jobs:
           context: .
           push: true
           tags: |
+<<<<<<< HEAD
             ghcr.io/taiyuhuang591-lang/devops-demo:${{ github.sha }}
             ghcr.io/taiyuhuang591-lang/devops-demo:latest
+=======
+            ghcr.io/taiyuhuang591-lang/0715:${{ github.sha }}
+            ghcr.io/taiyuhuang591-lang/0715:latest
+>>>>>>> 2c993d9 (test)
 
       - name: Update Config Repo
         env:
